@@ -85,6 +85,70 @@ nav a:hover {
 }
 
 
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 6px;
+}
+
+.product {
+  flex: 1 1 200px;
+  max-width: 300px; 
+  margin: 10px; 
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  transition: transform 0.3s ease; 
+}
+
+
+
+.product:hover img {
+  transform: scale(1.1); 
+}
+
+.sobre {
+  display: flex; 
+  align-items: flex-start; 
+  font-family: Apple Chancery, cursive; 
+  color: rgba(0, 0, 0, 0.82); 
+  text-align: left; 
+}
+
+.sobre .textos {
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: auto;
+}
+
+.sobre img {
+  max-width: 45%;
+  height: auto; 
+}
+
+#contato {
+  text-align: center;
+  padding: 20px;
+}
+
+.container-contato {
+  display: flex;
+  flex-direction: column;  
+  align-items: center; 
+  justify-content: center; 
+  width: 100%;             
+  max-width: 500px; 
+  margin: 0 auto;    
+  padding: 20px;
+}
+
+
+
+
 footer {
   background: rgba(39, 68, 175, 0.62);
   color: white;
@@ -113,3 +177,4 @@ footer {
     height: auto;
   }
 }
+
