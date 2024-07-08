@@ -1,0 +1,115 @@
+body {
+  background-image: url('image/fundo.png');
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center; 
+  background: rgba(39, 68, 175, 0.62);
+  padding: 10px 20px;
+}
+
+#menu {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background 0.3s;
+  text-align: center; 
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2); 
+ 
+}
+
+.banner {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color:rgba(0, 0, 255, 0.295);
+  gap: 10px;
+
+}
+
+.photo {
+  margin: 10px 10px 10px;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: relative;
+  
+}
+
+.banner img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.photo:hover {
+  transform: scale(1.2);
+  z-index: 1; 
+}
+
+
+footer {
+  background: rgba(39, 68, 175, 0.62);
+  color: white;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+  nav ul li {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .product {
+    flex: 1 1 100%; 
+    max-width: 100%;
+  }
+  .product img {
+    width: 100%; 
+    height: auto;
+  }
+}
