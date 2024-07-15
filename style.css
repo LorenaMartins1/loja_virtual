@@ -118,6 +118,31 @@ button:hover .verMais {
   color: white;
 }
 
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#search-bar {
+  width: 80%;
+  padding: 4px;
+  border: 1px solid #d3d5d6e5;
+  border-radius: 45px;
+  outline: none;
+}
+
+#search-button {
+  margin: 8px;
+  background: none;
+  border: none;
+}
+
+#search-button:hover {
+  color: rgba(39, 68, 175, 0.705);
+}
+
 .container {
   display: flex;
   justify-content: space-around;
