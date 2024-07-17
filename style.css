@@ -1,7 +1,8 @@
-html, body {
+* {
   margin: 0;
   padding: 0;
-  height: 100%;
+  box-sizing: border-box;
+  list-style: none;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
   line-height: 1.6;
   display: flex;
   flex-direction: column;
- 
+  min-height: 100vh;
 }
 
 .container-principal {
@@ -59,9 +60,8 @@ nav a:hover {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  background-color:rgba(0, 0, 255, 0.295);
+  background-color: rgba(0, 0, 255, 0.295);
   gap: 10px;
-  
 }
 
 .photo {
@@ -70,7 +70,6 @@ nav a:hover {
   height: 200px;
   cursor: pointer;
   transition: transform 0.3s ease;
-
 }
 
 .banner img {
@@ -95,7 +94,7 @@ button {
   border: solid 1px rgba(79, 79, 221, 0.562);
   border-radius: 40px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-  background-color: transparent;
+  background-color: rgba(39, 68, 175, 0.8);
   padding: 5px 8px;
   cursor: pointer;
   width: auto; 
@@ -110,8 +109,6 @@ button:hover {
   text-decoration: none;
   color: white;
   font-size: 14px;
- 
-  
 }
 
 button:hover .verMais {
@@ -186,7 +183,7 @@ h2 {
   height: 400px;
   color: white;
   border-radius: 20px;
-  box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.562);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.562);
 }
 
 form {
@@ -198,33 +195,47 @@ form {
   flex-direction: column;
   display: flex;
   gap: 5px;
+  color: white;
 }
 
 label {
-  color: rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
   font-size: 10px;
   letter-spacing: 2px;
   padding-left: 10px;
+  
 }
 
 input {
-  background: rgba(255, 255,255, 0.3);
+  color: white;
+  background: rgba(255, 255, 255, 0.3);
   height: 30px;
   line-height: 30px;
   border-radius: 20px;
   padding: 0px 20px;
+  transition: background 0.2s;
+}
+
+input:hover {
+  background-color: rgba(111, 111, 221, 0.438);
 }
 
 textarea {
-  background: rgba(255, 255,255, 0.3);
-  height: 40px;
-  line-height: 40px;
+  background: rgba(255, 255, 255, 0.3);
+  height: 67px;
+  line-height: 1.5;
   border-radius: 20px;
-  padding: 0px 20px;
+  padding: 10px 20px;
+  resize: none;
+  color: white;
+  transition: background 0.2s;
 }
 
-button {
+textarea:hover {
+  background-color: rgba(111, 111, 221, 0.438);
+}
+
+.button-contato {
   background: rgba(45, 123, 231, 0.918);
   height: 40px;
   line-height: 40px;
@@ -232,39 +243,71 @@ button {
   border: none;
   margin: 10px 0px;
   color: white;
-  box-shadow: 0px 0px 5px rgba(0, 0,0, 0.3);
+  transition: background 0.2s;
+}
+
+.button-contato:hover {
+  background-color: rgba(39, 68, 175, 0.8);
 }
 
 .sobre {
   display: flex; 
-  align-items: flex-start; 
+  flex-direction: row;
+  align-items: stretch; 
   font-family: Apple Chancery, cursive; 
   color: rgba(61, 57, 57, 0.82); 
   text-align: left; 
-  height: 100vh;
   box-sizing: border-box;
+}
+
+.sobre-img {
+  flex: 1;
+}
+
+.sobre-img img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
 }
 
 .textos {
+  flex: 2;
   padding: 20px;
-  margin-top: 30px;
-  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.sobre img {
-  width: auto;
-  height: 100vh;
-  object-fit: cover; 
-  box-sizing: border-box;
+#social-links {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  font-size: 25px;
+}
+
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+
+#social-links a:hover {
+  background-color: rgba(39, 68, 175, 0.8);
 }
 
 footer {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 12.5px;
   display: block;
   background: rgba(39, 68, 175, 0.62);
   color: white;
-  padding: 20px 0;
   width: 100%;
-  margin-top: 35px;
+  margin-top: auto;
 }
 
 @media (max-width: 600px) {
